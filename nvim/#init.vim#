@@ -1,4 +1,4 @@
-set runtimepath+=~/.vim,~/.vim/after
+:set runtimepath+=~/.vim,~/.vim/after
 set packpath+=~/.vim
 
 "Key bindings
