@@ -1,8 +1,5 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    // Add custom actions and keybindings to this array.
-    // To unbind a key combination from your defaults.json, set the command to "unbound".
-    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
     "actions": 
     [
         {
@@ -11,11 +8,8 @@
                 "action": "openSettings",
                 "target": "settingsUI"
             },
-            "keys": "ctrl+shift+,"
+            "keys": "ctrl+shift+comma"
         },
-        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-        // To learn more about selection, visit https://aka.ms/terminal-selection
         {
             "command": 
             {
@@ -25,6 +19,10 @@
             "keys": "ctrl+c"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": "toggleFocusMode",
             "keys": "ctrl+f"
         },
@@ -32,15 +30,6 @@
             "command": "paste",
             "keys": "ctrl+v"
         },
-        // Press Ctrl+Shift+F to open the search box
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        // Press Alt+Shift+D to open a new pane.
-        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-        // To learn more about panes, visit https://aka.ms/terminal-panes
         {
             "command": 
             {
@@ -54,7 +43,7 @@
     "alwaysShowTabs": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
     "initialPosition": "225,150",
     "launchMode": "focus",
     "profiles": 
@@ -66,9 +55,12 @@
             "colorScheme": "Adventure",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
-            "fontFace": "SFMono Nerd Font",
-            "fontSize": 10,
-            "fontWeight": "thin",
+            "font": 
+            {
+                "face": "SFMono Nerd Font",
+                "size": 10,
+                "weight": "thin"
+            },
             "padding": "8,8,8,8",
             "scrollbarState": "hidden",
             "suppressApplicationTitle": false,
@@ -77,7 +69,7 @@
         "list": 
         [
             {
-                "colorScheme": "Solarized Dark",
+                "colorScheme": "Gruvbox",
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -97,9 +89,9 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
-                "name": "Ubuntu-20.04",
+                "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl"
             }
         ]
